@@ -29,7 +29,7 @@
         "ext-fileinfo": "*",
         "ext-imagick": "*",
         "ext-swoole": ">=4.5",
-        "joyqhs/encryption": "~3.0.0",
+        "joyqhs/encryption": "~1.0.0",
         "hyperf/cache": "~3.0.0",
         "hyperf/di": "~3.0.0",
         "hyperf/framework": "~3.0.0",
