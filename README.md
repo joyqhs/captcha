@@ -3,21 +3,21 @@
 ## 安装
 
 ```shell
-composer require hyperf-ext/captcha
+composer require joyqhs/captcha
 ```
 
 ## 发布配置
 
 ```shell
-php bin/hyperf.php vendor:publish hyperf-ext/captcha
+php bin/hyperf.php vendor:publish joyqhs/captcha
 ```
 
 > 字体文件默认发布到 `<root>/storage/fonts` 目录。
 
-组件依赖 `hyperf-ext/encryption` 组件加解密 `key`，依赖 `hyperf/cache` 组件暂存使用过的 `key`，您需要发布这些组件的配置：
+组件依赖 `joyqhs/encryption` 组件加解密 `key`，依赖 `hyperf/cache` 组件暂存使用过的 `key`，您需要发布这些组件的配置：
 
 ```shell
-php bin/hyperf.php vendor:publish hyperf-ext/encryption
+php bin/hyperf.php vendor:publish joyqhs/encryption
 php bin/hyperf.php vendor:publish hyperf/cache
 ```
 
@@ -25,7 +25,7 @@ php bin/hyperf.php vendor:publish hyperf/cache
 
 ```php
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Captcha\CaptchaFactory;
+use Joyqhs\Captcha\CaptchaFactory;
 
 $captchaFactory = ApplicationContext::getContainer()->get(CaptchaFactory::class);
 
