@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 namespace Joyqhs\Captcha;
 
-use HyperfExt\Captcha\Listener\ValidatorFactoryResolvedListener;
+use Joyqhs\Captcha\Listener\ValidatorFactoryResolvedListener;
 
 class ConfigProvider
 {

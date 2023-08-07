@@ -8,6 +8,7 @@ declare(strict_types=1);
  * @contact  qiaohengshan@gmail.com
  * @license  https://github.com/qiaohengshan/captcha/blob/master/LICENSE
  */
+
 namespace Joyqhs\Captcha\Listener;
 
 use Hyperf\Event\Contract\ListenerInterface;
@@ -24,7 +25,7 @@ class ValidatorFactoryResolvedListener implements ListenerInterface
         ];
     }
 
-    public function process(object $event)
+    public function process(object $event): void
     {
         /** @var \Hyperf\Validation\Contract\ValidatorFactoryInterface $validatorFactory */
         $validatorFactory = $event->validatorFactory;
